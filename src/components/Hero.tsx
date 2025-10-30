@@ -15,11 +15,11 @@ export const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))] bg-clip-text text-transparent">
-              Your Name
+              Bryant Juspi
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Full-Stack Developer crafting beautiful, functional web experiences
+            Backend Developer focused on building highly scalable and resilient platforms
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export const Hero = () => {
 
         <div className="flex gap-4 justify-center pt-8">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/bjuspi"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
@@ -51,7 +51,7 @@ export const Hero = () => {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/bjuspi"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
@@ -59,10 +59,12 @@ export const Hero = () => {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="https://medium.com/@bryantj"
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 shadow-sm"
           >
-            <Mail className="h-5 w-5" />
+            <BookText className="h-5 w-5" />
           </a>
         </div>
       </div>

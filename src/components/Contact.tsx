@@ -1,31 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Linkedin, Github, BookText } from "lucide-react";
 
 const contactMethods = [
   {
     icon: Mail,
     label: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
+    value: "bjuspi@outlook.com",
+    href: "mailto:bjuspi@outlook.com",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "@yourusername",
-    href: "https://github.com/yourusername",
+    value: "@bjuspi",
+    href: "https://github.com/bjuspi",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "Your Name",
-    href: "https://linkedin.com/in/yourusername",
+    value: "Bryant Juspi",
+    href: "https://linkedin.com/in/bjuspi",
   },
   {
-    icon: Twitter,
-    label: "Twitter",
+    icon: BookText,
+    label: "Medium",
     value: "@yourusername",
-    href: "https://twitter.com/yourusername",
+    href: "https://medium.com/@bryantj",
   },
 ];
 
