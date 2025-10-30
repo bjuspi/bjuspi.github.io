@@ -11,12 +11,8 @@ const Index = () => {
       <Skills />
       <Contact />
       
-      <footer className="py-12 px-6 border-t border-border/50">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xs font-light text-muted-foreground">
-            © {new Date().getFullYear()} Your Name
-          </p>
-        </div>
+      <footer className="py-8 px-4 text-center text-muted-foreground border-t border-border">
+        <p>© {new Date().getFullYear()} Your Name. Built with React & Tailwind CSS</p>
       </footer>
     </main>
   );
