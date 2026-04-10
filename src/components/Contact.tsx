@@ -24,14 +24,14 @@ const contactMethods = [
   {
     icon: BookText,
     label: "Medium",
-    value: "@yourusername",
+    value: "@bryantj",
     href: "https://medium.com/@bryantj",
   },
 ];
 
 export const Contact = () => {
   return (
-    <section className="py-20 px-4">
+    <section id="contact" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Let's Connect</h2>
@@ -75,7 +75,7 @@ export const Contact = () => {
             className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all hover:scale-105"
             asChild
           >
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:bjuspi@outlook.com">
               <Mail className="mr-2 h-5 w-5" />
               Send Me a Message
             </a>

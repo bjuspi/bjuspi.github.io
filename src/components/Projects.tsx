@@ -1,32 +1,31 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, BookText } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with payment integration, inventory management, and admin dashboard.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "https://github.com/yourusername/project1",
-    demo: "https://demo.example.com",
+    title: "Stair-Climbing Robot Navigation",
+    description: "Final year project developing a SLAM system for stair-climbing robots, enabling indoor localization and navigation in narrow spaces.",
+    image: "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?w=800&h=600&fit=crop",
+    tech: ["C++", "SLAM", "Object Detection", "CMake"],
+    github: "https://github.com/bjuspi/FYP_A025",
+    article: "https://hdl.handle.net/10356/158947",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates, team chat, and analytics.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    tech: ["TypeScript", "React", "Firebase", "Tailwind"],
-    github: "https://github.com/yourusername/project2",
-    demo: "https://demo.example.com",
+    title: "GammaGo",
+    description: "An interactive go game system that integrates image recognition with robot arm control using Gomoku as the game algorithm.",
+    image: "https://user-images.githubusercontent.com/47680904/158308089-48b26049-3eb7-43ec-87d3-ab005eae93a7.jpg",
+    tech: ["Python", "ROS", "Computer Vision", "MoveIt"],
+    github: "https://github.com/bjuspi/GammaGo",
+    article: "https://medium.com/@bryantj/gammago-part-1-vision-system-45611cb566f1",
   },
   {
-    title: "Weather Dashboard",
-    description: "Real-time weather tracking with forecasts, interactive maps, and location-based alerts.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop",
-    tech: ["Next.js", "API Integration", "Charts.js", "CSS3"],
-    github: "https://github.com/yourusername/project3",
-    demo: "https://demo.example.com",
+    title: "Neural Network Equity Trading",
+    description: "Machine learning pipeline for predicting equity market movements, with data acquisition, feature engineering, and model training.",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop",
+    tech: ["Python", "Jupyter", "Machine Learning", "Data Science"],
+    github: "https://github.com/bjuspi/nn_equity_trading",
   },
 ];
 
@@ -88,16 +87,18 @@ export const Projects = () => {
                       Code
                     </a>
                   </Button>
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-                    asChild
-                  >
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
+                  {project.article && (
+                    <Button
+                      size="sm"
+                      className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                      asChild
+                    >
+                      <a href={project.article} target="_blank" rel="noopener noreferrer">
+                        <BookText className="h-4 w-4 mr-2" />
+                        Article
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
