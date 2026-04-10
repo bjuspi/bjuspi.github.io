@@ -71,6 +71,9 @@ export const Hero = () => {
             <a href="#projects" className="text-primary hover:underline">game-playing robot arms</a> at NTU's Robotics Research Centre, to designing transaction processing platforms that handle millions in AUM at{" "}
             <a href="#experience" className="text-primary hover:underline">Endowus</a>.
           </p>
+          <p>
+            I'm also a huge proponent of open-source code — I believe the best way to push technology forward is by building in the open and sharing knowledge freely.
+          </p>
         </div>
       </div>
     </section>
