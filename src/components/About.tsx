@@ -62,7 +62,7 @@ export const About = () => {
             <h3 className="text-lg font-semibold">Areas I'm Drawn To</h3>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
-            {["Medical", "Robotics", "Computer Vision", "Trading", "Finance"].map((interest) => (
+            {["Medical", "Robotics", "Computer Vision", "Trading"].map((interest) => (
               <Badge
                 key={interest}
                 variant="secondary"
