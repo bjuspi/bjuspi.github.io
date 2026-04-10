@@ -19,12 +19,11 @@ export const Hero = () => {
             </h1>
             <p className="text-lg text-muted-foreground">
               <span className="font-medium text-foreground">Senior Software Engineer.</span>{" "}
-              <a href="https://www.endowus.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline underline-offset-4">Endowus</a>{" "}
-              — Trading & Cash Management
+              Endowus — Trading & Cash Management
             </p>
             <p className="text-base text-muted-foreground">
               <span className="font-medium text-foreground">B.Eng Mechanical Engineering.</span>{" "}
-              <a href="https://www.ntu.edu.sg" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline underline-offset-4">Nanyang Technological University</a>
+              Nanyang Technological University
             </p>
 
             <div className="flex gap-3 justify-center md:justify-start pt-2">
