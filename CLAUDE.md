@@ -20,9 +20,9 @@ No test framework is configured.
 
 **Routing** is in `src/App.tsx` — flat structure with React Router DOM (`/` → Index, `*` → NotFound). Add new routes above the catch-all.
 
-**Page composition**: `src/pages/Index.tsx` composes section components (Hero, Projects, Skills, Contact) into the main page layout.
+**Page composition**: `src/pages/Index.tsx` composes section components into the main page layout in this order: Hero → About → Experience → Projects → Publications → Skills → Contact → Footer.
 
-**Section components** live in `src/components/` — each section (Hero, Projects, Skills, Contact) is a self-contained component with its own hardcoded data (projects list, skills list, social links).
+**Section components** live in `src/components/` — each section is a self-contained component with its own hardcoded data (experience list, projects list, skills list, etc.).
 
 **UI primitives** in `src/components/ui/` are shadcn/ui components managed via the `components.json` config. Add new ones with `npx shadcn-ui@latest add <component>`.
 
@@ -32,8 +32,13 @@ No test framework is configured.
 
 **State**: TanStack React Query for server state, next-themes for theme toggling, custom `use-toast` hook with useReducer for notifications. No global state library.
 
+## Personal Brand
+
+The portfolio is built around three core values: **Researcher**, **Problem Solver**, **Engineer**. Content should reinforce these pillars. Interest areas: Medical, Robotics, Computer Vision, Trading.
+
 ## Key Conventions
 
 - TypeScript strict mode is OFF — the project uses loose type checking
-- Components use named exports, not default exports
+- Components use named exports, not default exports (except `src/pages/Index.tsx` which uses default export)
 - Tailwind utility classes only — no custom CSS class naming conventions
+- Section data (experience, projects, skills, awards) is hardcoded as arrays/objects at the top of each component file
