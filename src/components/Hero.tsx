@@ -72,7 +72,7 @@ export const Hero = () => {
             <a href="#experience" className="text-primary hover:underline">Endowus</a>.
           </p>
           <p>
-            I'm also a huge proponent of open-source code — I believe the best way to push technology forward is by building in the open and sharing knowledge freely.
+            I'm also a huge proponent of open-source code — I believe the best way to push technology forward is by building in the open and sharing knowledge freely. Outside of work, I'm a huge fan of martial arts.
           </p>
         </div>
       </div>
